@@ -17,12 +17,12 @@ importers:
       '@types/node':
         specifier: 18.16.9
         version: 18.16.9
+      my-nx-plugin:
+        specifier: workspace:*
+        version: link:packages/my-nx-plugin
       nx:
         specifier: 19.5.4
         version: 19.5.4
-      shared-nx-plugins:
-        specifier: workspace:*
-        version: link:packages/shared-nx-plugins
       typescript:
         specifier: ~5.7.2
         version: 5.7.3
@@ -30,7 +30,7 @@ importers:
         specifier: 2.1.8
         version: 2.1.8(@types/node@18.16.9)
 
-  packages/shared-nx-plugins:
+  packages/my-nx-plugin:
     dependencies:
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: ^7.27.1

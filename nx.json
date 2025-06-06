@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "plugins": ["shared-nx-plugins"],
+  "plugins": ["my-nx-plugin"],
   "workspaceLayout": {
     "libsDir": "packages"
   }

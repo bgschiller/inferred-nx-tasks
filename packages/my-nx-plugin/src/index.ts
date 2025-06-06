@@ -10,7 +10,7 @@ import type { PackageJson } from './package-json';
 import { getChecksum } from './getChecksum';
 import type { RollupExecutorOptions } from './executors/rollup/executor';
 
-export const name = 'shared-nx-plugins';
+export const name = 'my-nx-plugin';
 
 export const createNodesV2: CreateNodesV2 = [
   // declare that any package with a package.json file is one we
@@ -90,9 +90,9 @@ function getTargetsByTags(_file: string, packageJson: PackageJson) {
     }
   }
 
-  // Nx doesn't seem to notice when *this* code, the shared-nx-plugins, changes.
+  // Nx doesn't seem to notice when *this* code, the my-nx-plugin, changes.
   // We add a runtime input calculated from a checksum of the source code to force
-  // Nx to re-run the target when the shared-nx-plugins changes.
+  // Nx to re-run the target when the my-nx-plugin changes.
   const checksum = getChecksum();
   Object.values(targets).forEach((target) => {
     target.inputs = [
@@ -130,7 +130,7 @@ function createRollupTarget(options: CreateTargetOptions): TargetConfiguration {
   const isPublicPackage = !options.packageJson.private;
 
   return {
-    executor: 'shared-nx-plugins:rollup',
+    executor: 'my-nx-plugin:rollup',
     options: {
       clean: true,
       buildType: 'release',
