@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "plugins": ["my-nx-plugin"],
+  "plugins": [
+    "my-nx-plugin"
+  ],
   "workspaceLayout": {
     "libsDir": "packages"
-  }
+  },
+  "useLegacyCache": true
 }

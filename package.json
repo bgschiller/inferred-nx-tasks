@@ -6,13 +6,14 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@nx/plugin": "19.5.4",
+    "@nx/plugin": "20.8.2",
+    "@nx/vite": "20.8.2",
     "@types/node": "18.16.9",
-    "@nx/vite": "19.5.4",
-    "nx": "19.5.4",
+    "jiti": "2.4.2",
+    "my-nx-plugin": "workspace:*",
+    "nx": "20.8.2",
     "typescript": "~5.7.2",
-    "vitest": "2.1.8",
-    "my-nx-plugin": "workspace:*"
+    "vitest": "2.1.8"
   },
   "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e",
   "nx": {
