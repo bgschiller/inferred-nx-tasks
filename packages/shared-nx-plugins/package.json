@@ -1,0 +1,29 @@
+{
+  "name": "shared-nx-plugins",
+  "version": "1.1.0",
+  "dependencies": {
+    "@nx/devkit": "19.5.4",
+    "@babel/plugin-proposal-explicit-resource-management": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "fast-glob": "^3.3.3",
+    "rollup": "^4.40.2",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "ts-transformer-optimize-const-enum": "^0.1.2",
+    "tslib": "^2.3.0"
+  },
+  "nx": {
+    "projectType": "library",
+    "tags": [
+      "vitest"
+    ]
+  },
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "private": true,
+  "executors": "./executors.json"
+}

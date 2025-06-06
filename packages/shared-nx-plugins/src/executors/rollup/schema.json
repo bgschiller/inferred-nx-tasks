@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "clean": {
+      "type": "boolean",
+      "description": "Clean the output directory before building.",
+      "default": true
+    },
+    "buildType": {
+      "type": "string",
+      "description": "The build type to use.",
+      "enum": ["release", "debug"],
+      "default": "release"
+    },
+    "preserveModules": {
+      "type": "boolean",
+      "description": "Preserve the source modules in the output directory."
+    },
+    "transformModernSyntax": {
+      "type": "boolean",
+      "description": "Transform modern syntax as defined in .browserlistrc."
+    }
+  },
+  "required": ["clean"],
+  "additionalProperties": true
+}
