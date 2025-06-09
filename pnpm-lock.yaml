@@ -39,8 +39,8 @@ importers:
         specifier: ^7.27.1
         version: 7.27.4(@babel/core@7.27.4)
       '@nx/devkit':
-        specifier: 19.5.4
-        version: 19.5.4(nx@20.8.2)
+        specifier: 20.8.2
+        version: 20.8.2(nx@20.8.2)
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.27.4)(rollup@4.41.1)
@@ -1903,31 +1903,6 @@ packages:
       fastq: 1.19.1
     dev: false
 
-  /@nrwl/devkit@19.5.4(nx@20.8.2):
-    resolution: {integrity: sha512-T3cRQErKfEyrx9x+xsnY4kg5+vmwPn3UQY1GwsPuuhqYeJn2NAQFzb8gcnZ6mSTqughum3eqp2nNDmpUkWO7tg==}
-    dependencies:
-      '@nx/devkit': 19.5.4(nx@20.8.2)
-    transitivePeerDependencies:
-      - nx
-    dev: false
-
-  /@nx/devkit@19.5.4(nx@20.8.2):
-    resolution: {integrity: sha512-0TG2iU0xVRuElLP2aLeRSKUynsC+UgHqE/FJW2IcglHngs2/Duw2A4HDUVVOxztkEQPmp736qkYSwFO0nlOGxg==}
-    peerDependencies:
-      nx: '>= 17 <= 20'
-    dependencies:
-      '@nrwl/devkit': 19.5.4(nx@20.8.2)
-      ejs: 3.1.10
-      enquirer: 2.3.6
-      ignore: 5.3.2
-      minimatch: 9.0.3
-      nx: 20.8.2
-      semver: 7.7.2
-      tmp: 0.2.3
-      tslib: 2.8.1
-      yargs-parser: 21.1.1
-    dev: false
-
   /@nx/devkit@20.8.2(nx@20.8.2):
     resolution: {integrity: sha512-rr9p2/tZDQivIpuBUpZaFBK6bZ+b5SAjZk75V4tbCUqGW3+5OPuVvBPm+X+7PYwUF6rwSpewxkjWNeGskfCe+Q==}
     peerDependencies:
@@ -1942,7 +1917,6 @@ packages:
       tmp: 0.2.3
       tslib: 2.8.1
       yargs-parser: 21.1.1
-    dev: true
 
   /@nx/eslint@20.8.2(eslint@9.28.0)(nx@20.8.2):
     resolution: {integrity: sha512-0hCVR0yto0u/4/6iBITXLka5j1dVJytmY9M6NIk3CJJ7TuCzr0aoWAKEdu+oIS6afMqKV+voLTq+Gjxwr/LBoA==}
